@@ -1,0 +1,5 @@
+[[spring-boot-rest-server-pgflygrogra]]
+spring-boot-rest-server-pgflygrogra
+-----------------------------------
+
+REST server demo project for Spring Boot with PostgreSQL, Flyway, Groovy and Gradle

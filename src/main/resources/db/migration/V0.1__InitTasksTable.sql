@@ -1,0 +1,1 @@
+INSERT INTO tasks VALUES(1,'Task A','Task A Description'),(2,'Task B','Task B Description');

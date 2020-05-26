@@ -1,0 +1,6 @@
+{
+	"name": "Boot",
+	"description": "Boot Description",
+	"image": "heroku/gradle",
+	"addons": [ "heroku-postgresql" ]
+}
