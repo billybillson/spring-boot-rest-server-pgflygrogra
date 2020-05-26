@@ -3,3 +3,5 @@ spring-boot-rest-server-pgflygrogra
 -----------------------------------
 
 REST server demo project for Spring Boot with PostgreSQL, Flyway, Groovy and Gradle
+
+@ToDo: How to set up with Heroku
