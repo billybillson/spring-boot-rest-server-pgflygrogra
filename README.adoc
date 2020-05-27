@@ -1,19 +1,22 @@
 :encoding: utf-8
-:img-github-fork: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/github-fork.png
 
-:img-heroku-menu: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-menu.png
+:img-base-url: ../../raw/master/docs/assets
 
-:img-heroku-new-dyno: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-new-dyno.png
+:img-github-fork: {img-base-url}/github-fork.png
 
-:img-heroku-addon-postgres: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-addon-postgres.png
+:img-heroku-menu: {img-base-url}/heroku-menu.png
 
-:img-heroku-addon-search: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-addon-search.png
+:img-heroku-new-dyno: {img-base-url}/heroku-new-dyno.png
 
-:img-heroku-buildpack-gradle: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-buildpack-gradle.png
+:img-heroku-addon-postgres: {img-base-url}/heroku-addon-postgres.png
 
-:img-heroku-deploy-github: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-deploy-github.png
+:img-heroku-addon-search: {img-base-url}/heroku-addon-search.png
 
-:img-heroku-deploy-github-manually: https://raw.githubusercontent.com/billybillson/spring-boot-rest-server-pgflygrogra/master/docs/assets/heroku-deploy-github-manually.png
+:img-heroku-buildpack-gradle: {img-base-url}/heroku-buildpack-gradle.png
+
+:img-heroku-deploy-github: {img-base-url}/heroku-deploy-github.png
+
+:img-heroku-deploy-github-manually: {img-base-url}/heroku-deploy-github-manually.png
 
 = Spring Boot REST SERVER (PgFlyGroGra)
 
