@@ -50,6 +50,80 @@ image:{img-heroku-buildpack-gradle}[] +
 image:{img-heroku-deploy-github}[] +
 image:{img-heroku-deploy-github-manually}[] +
 
+=== How to use
+
+* Install a browser addon like RESTer <<A3,[3]>> or +
+  a standalone app like Advanced REST Client <<A4,[4]>> / Postman <<A5,[5]>>
+
+* On your dyno dashboard click on the `Settings` tab and scroll down to Domains.
+
+* Click on the link after `Your app can be found at` to open the start page of your REST demo server. +
+  You should see the message: +
+  _This is Groovy land. Keep out of here!_
+
+* Try the same with your REST addon or REST standalone app (aka REST client). +
+  Set *METHODE* to *GET* and copy paste the *previous link* into *url field*; hit *enter*. +
+  You should see: +
+  _Response 200_ +
+  _This is Groovy land. Keep out of here!_
+
+* Now append _/tasks_ to the *url input* of your REST client; hit *enter*. +
+  You should see: +
+   _Response 200_ +
+----
+[
+    {
+        "id": 1,
+        "title": "Task A",
+        "description": "Task A Description"
+    },
+    {
+        "id": 2,
+        "title": "Task B",
+        "description": "Task B Description"
+    }
+]
+----
+
+* Next append _/1_ or _/2_ to _/tasks_ in the *url input* of your REST client; hit *enter*. +
+  You should see: +
+   _Response 200_ +
+----
+{
+    "id": 1,
+    "title": "Task A",
+    "description": "Task A Description"
+}
+----
+
+* Finally set *METHODE* to *POST* and *url* to _{your server url}/task/add_. +
+  Click on `Header` and set *Name* to _Content-Type_ and *Value* to _application/json_ + 
+  Click on `Body`. +
+  Before you continue with *RESTer* do the following: click in the corresponding text box on the `dotted menu` button and select `Plain` (not `JSON`). +
+  Paste into the `Body` text box and hit *enter*: +
+----
+{
+    "title": "Task C",
+    "description": "Task C Description"
+}
+----
+{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} You should see: +
+{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} _Response 200_
+----
+{
+    "id": 3,
+    "title": "Task C",
+    "description": "Task C Description"
+}
+----
+
+
+
 === Appendix
 [[A1]] [1] https://help.github.com/en/github/getting-started-with-github/fork-a-repo +
-[[A2]] [2] https://devcenter.heroku.com/articles/github-integration
+[[A2]] [2] https://devcenter.heroku.com/articles/github-integration +
+[[A3]] [3] https://github.com/frigus02/RESTer +
+{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}https://addons.mozilla.org/firefox/addon/rester +
+{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}https://chrome.google.com/webstore/detail/rester/eejfoncpjfgmeleakejdcanedmefagga +
+[[A4]] [4] https://install.advancedrestclient.com/install +
+[[A5]] [5] https://www.postman.com/ +
